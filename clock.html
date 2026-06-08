@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time Zone Clock</title>
+    <link rel="stylesheet" href="clock-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 World Time Zone Clock</h1>
+        
+        <div class="main-clock">
+            <div class="local-time">
+                <h2>Local Time</h2>
+                <div class="time-display" id="localTime">00:00:00</div>
+                <div class="timezone-info" id="localTimezone">UTC</div>
+            </div>
+        </div>
+
+        <div class="timezone-selector">
+            <label for="timezonesToDisplay">Select Time Zones:</label>
+            <select id="timezonesToDisplay" multiple>
+                <option value="America/New_York" selected>New York (EST/EDT)</option>
+                <option value="Europe/London" selected>London (GMT/BST)</option>
+                <option value="Europe/Paris" selected>Paris (CET/CEST)</option>
+                <option value="Asia/Tokyo" selected>Tokyo (JST)</option>
+                <option value="Asia/Shanghai">Shanghai (CST)</option>
+                <option value="Asia/Dubai">Dubai (GST)</option>
+                <option value="Asia/Bangkok">Bangkok (ICT)</option>
+                <option value="Asia/Singapore">Singapore (SGT)</option>
+                <option value="Asia/Hong_Kong">Hong Kong (HKT)</option>
+                <option value="Australia/Sydney">Sydney (AEDT/AEST)</option>
+                <option value="Pacific/Auckland">Auckland (NZDT/NZST)</option>
+                <option value="America/Los_Angeles">Los Angeles (PST/PDT)</option>
+                <option value="America/Chicago">Chicago (CST/CDT)</option>
+                <option value="America/Denver">Denver (MST/MDT)</option>
+                <option value="America/Mexico_City">Mexico City (CST/CDT)</option>
+                <option value="America/Toronto">Toronto (EST/EDT)</option>
+                <option value="America/Vancouver">Vancouver (PST/PDT)</option>
+                <option value="America/Argentina/Buenos_Aires">Buenos Aires (ART)</option>
+                <option value="America/Sao_Paulo">São Paulo (BRT/BRST)</option>
+                <option value="Africa/Cairo">Cairo (EET)</option>
+                <option value="Africa/Johannesburg">Johannesburg (SAST)</option>
+                <option value="Africa/Lagos">Lagos (WAT)</option>
+                <option value="Europe/Berlin">Berlin (CET/CEST)</option>
+                <option value="Europe/Rome">Rome (CET/CEST)</option>
+                <option value="Europe/Moscow">Moscow (MSK)</option>
+                <option value="India/Kolkata">Kolkata (IST)</option>
+            </select>
+            <button id="resetBtn">Reset to Default</button>
+        </div>
+
+        <div class="clocks-grid" id="clocksContainer">
+            <!-- Clocks will be dynamically inserted here -->
+        </div>
+
+        <div class="info-section">
+            <h3>💡 Features</h3>
+            <ul>
+                <li>Real-time display of current time in multiple time zones</li>
+                <li>Automatically updates every second</li>
+                <li>Select or deselect time zones to customize your view</li>
+                <li>Shows UTC offset for each time zone</li>
+                <li>Responsive design - works on all devices</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="clock-script.js"></script>
+</body>
+</html>
